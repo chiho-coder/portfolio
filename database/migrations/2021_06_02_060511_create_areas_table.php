@@ -16,7 +16,7 @@ class CreateAreasTable extends Migration
         Schema::create('areas', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->bigInteger('category_id')->unsigned();
+            $table->boolean('authed');
             $table->timestamps();
         });
     }
