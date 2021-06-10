@@ -12,7 +12,7 @@
 */
 
 Route::get('/area', 'AreaController@index');
-
+Route::get('/category', 'CategoryController@index');
 
 Auth::routes();
 

@@ -23,4 +23,4 @@ class AreasTableSeeder extends Seeder
              ['name' => '県北', 'authed' => true],
              ['name' => 'その他', 'authed' => true],
     ]);}
-}
+ }
