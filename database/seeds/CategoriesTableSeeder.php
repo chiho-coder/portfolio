@@ -11,7 +11,7 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     { 
-         DB::table('categories') ->insert([
+         DB::table('categories') ->updateOrCreate([
          ['name' => '観光'],
          ['name' => '宿泊'],
          ['name' => 'レストラン・居酒屋'],

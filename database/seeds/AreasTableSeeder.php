@@ -11,7 +11,7 @@ class AreasTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('areas') ->insert([
+        DB::table('areas') ->updateOrCreate([
              ['name' => '広島市', 'authed' => true],
              ['name' => '宮島', 'authed' => true],
              ['name' => '東広島','authed' => true],
