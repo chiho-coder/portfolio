@@ -21,6 +21,7 @@ class CreateFacilitiesTable extends Migration
             $table->string('image_path')->nullable(); 
             $table->timestamps();
             $table->bigInteger('category_id')->unsigned();
+            $table->bigInteger('area_id')->unsigned();
         });
     }
 
