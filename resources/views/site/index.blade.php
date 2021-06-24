@@ -7,15 +7,15 @@
         <link href="{{ asset('css/top.css') }}" rel="stylesheet">
 </head>
 <body>
- <div class="home-content wrapper">
- <h2 class="page-title">サイトのタイトル</h2>
+<div class="center">  
+<h2 class="page-title">サイトのタイトル</h2>
 <ul>
     @foreach ($areas as $area)
     <li>
-      <a href="{{action('CategoryController@index')}}">{{ $area->name }}</a>
+      <a href="{{action('CategoryController@index',['id' => $area->id]) }}">{{ $area->name }}</a>
     </li>
     @endforeach
 </ul>
 </div>
-</body
+</body>
 </html>

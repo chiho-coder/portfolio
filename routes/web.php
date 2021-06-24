@@ -19,11 +19,14 @@
 
 
 Route::group(['prefix' =>'review'], function() {
-    Route::get('site/post', 'Main\ReviewController@add');//->middleware('auth');
-    Route::post('site/post','Main\ReviewController@create');//->middleware('auth');
+    Route::get('site/post', 'Main\ReviewController@add')->middleware('auth');
+    Route::post('site/post','Main\ReviewController@create')->middleware('auth');
+    Route::get('review', 'Main\ReviewController@index')->middleware('auth');
   });
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/area', 'AreaController@index');
+Route::get('/category', 'CategoryController@index');

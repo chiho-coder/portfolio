@@ -10,10 +10,11 @@ class Review extends Model
      
      
      public static $rules = array(
+        'title'   => 'required',     
         'comment' => 'required');
         
      public function guest() {
-         return $this->hasMany('App\Guest');
+         return $this->hasMany('App\User');
      }
      
      public function facility() {
