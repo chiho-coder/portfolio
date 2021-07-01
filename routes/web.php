@@ -30,3 +30,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/area', 'AreaController@index');
 Route::get('/category', 'CategoryController@index');
+
+//Route::get('area/{area_id}/category/{category_id}', function($param1, $param2) {
+    //return view('hello.index', ['area_id'=>$param1, 'category_id'=>$param2]);
+//});
